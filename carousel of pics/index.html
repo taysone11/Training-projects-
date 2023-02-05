@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+
+    <div class="list">
+        <div class="image fade" id ="image">
+        <img src="pics/first.jpg" width="100%">
+        </div>
+        <div class="image fade" id ="image">
+            <img src="pics/second.jpg" width="100%">
+        </div>
+        <div class="image fade" id ="image" >
+            <img src="pics/third.jpg" width="100%">
+        </div>
+        <i class="fa-solid fa-angle-left" id="prev" onclick="showImage(-1)"></i>
+        <i class="fa-solid fa-angle-right" id="next" onclick="showImage(1)"></i>
+    
+   </div>
+      
+
+    <div class="dots">
+        <span class="dot" id="dot"></span>
+        <span class="dot" id="dot"></span>
+        <span class="dot" id="dot"></span>
+    </div>
+
+</div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

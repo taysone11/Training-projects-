@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Fredoka+One&family=Poor+Story&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.textWriter {
+    font-family: 'Black Ops One', cursive;
+    font-size: 22px;
+    text-shadow: 2px 2px 10px #00FFFF;
+    color: #00FFFF;
+    height: 200px;
+    width: 500px;
+    margin: 20px;
+    
+    
+
+}
+
+
+.text-wrapper {
+
+    position: relative;
+   
+    height: 200px;
+    width: 500px;
+}
+.stop {
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    opacity: 0;
+    padding-top: 10px;
+    color: white;
+    width: 40%;
+    border: 1px solid lightgrey;
+    height: 30%;
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: calc(50% - 100px);
+    border-radius: 20px ;
+    background-color: rgba(255, 0, 0, 0.627);
+    animation: blinker 1s linear infinite;
+    animation-name: blinker2;
+    
+}
+@keyframes blinker2{
+    0%{opacity: 0;}
+      50%{opacity: .7;}
+      100%{opacity: 0;}
+    }
+
+.input{
+    width: 430px;
+    height: 50px;
+    margin: 20px;
+    margin-right:-5px;
+    border-radius: 10px;
+    padding-left: 5px ;
+}
+
+.input::placeholder {
+
+font-size: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+
+button {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    
+
+}
+button:hover {
+    background-color: #ee0101;
+
+}
+
+
+
+
+.off {
+    position: relative; /* Относительное позиционирование */ 
+}
+.off::after {
+content: attr(text-off); /* Выводим текст */
+position: absolute; /* Абсолютное позиционирование */
+ /* Ширина подсказки */
+left: 90px; top: 20px; /* Положение подсказки */
+background: #717272; /* Синий цвет фона */
+color: #fff; /* Цвет текста */
+padding: 4px; /* Поля вокруг текста */
+
+border-radius: 45px;
+opacity: 0; /* Подсказка невидима */
+transition: .5s; /* Время появления подсказки */
+} 
+.off:hover::after {
+opacity: 1; /* Показываем подсказку */
+
+}
+
+
+.inputTextBlock {
+    
+    width: 530px;
+    
+}
+
+
+
+
+
+span{animation: blinker 1s linear infinite;
+animation-name: blinker1;
+}
+
+@keyframes blinker1{ 
+      50%{opacity: 0;}
+    }
